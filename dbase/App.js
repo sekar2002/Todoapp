@@ -1,0 +1,18 @@
+const express=require('express')
+const bodyParser=require('body-parser')
+const cors=require('cors')
+const {getAllTodoList,createTodo, getTodoById,deletebyid,updateById}=require('./controller/todo')
+const {connectDb}=require('./config/db')
+connectDb()
+const app=new express()
+app.use(cors())
+app.use(bodyParser.json())
+app.get('/api/v2/todo',getAllTodoList)
+app.post('/api/v2/todo',createTodo)
+app.get('/api/v2/todo/:id',getTodoById)
+app.delete('/api/v2/todo/:id',deletebyid)
+app.put('/api/v2/todo/:id',updateById)
+app.listen(3000,()=>
+{
+    console.log("server running")
+})

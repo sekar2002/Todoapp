@@ -1,0 +1,81 @@
+.new-item
+{
+    display: flex;
+    padding:25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 7px 20px  rgba(211, 211, 211, 0.4);
+    margin-bottom: 50px;
+}
+.new-item .checkbox
+{
+   
+    margin-right: 20px;
+}
+.new-item input{
+    border:none;
+    border-bottom: 2px solid black;
+    width:100%;
+    font-size:20px;
+}
+.new-item  .form-container
+{
+    flex-grow:1;
+}
+.new-item input:focus
+{
+    outline:none;
+}
+.button
+{
+    display: flex;
+    gap:10px;
+    margin-top: 20px;
+}
+.badge-container{
+    display:flex;
+    margin-top: 20px;
+    gap:20px;
+   
+}
+.badge-container .p-badge
+{   
+    padding:4px 10px;
+    width:40px;
+    font-size: 12px;
+    text-align: center;
+    border-radius:20px;
+    cursor: pointer;
+
+}
+.badge-container .p-badge.low{
+    color:#008080;
+    background-color: #00808033;
+}
+.badge-container .p-badge.high{
+    color:#FF0000;
+    background-color: #FF000033;
+}
+.badge-container .p-badge.medium{
+    color:#FFFF00;
+    background-color: #FFFF0033;
+}
+.badge-container .p-badge.selected.low
+{
+    outline: 2px solid #008080;
+    background-color:#008080;
+}
+.badge-container .p-badge.selected.high
+{
+    outline: 2px solid #FF0000;
+    background-color: #FF0000;
+}
+.badge-container .p-badge.selected.medium
+{
+    outline: 2px solid #FFFF00;
+    background-color:#FFFF00;
+}
+.form-container input:hover{
+    display: flex;
+}
+

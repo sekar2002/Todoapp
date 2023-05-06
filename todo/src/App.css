@@ -1,0 +1,26 @@
+.title
+{ text-align:center;
+    color:Olive;
+
+}
+
+#root
+{
+    background-color: #e0e0e0;
+    height: 100vh;
+    
+}
+.App
+{
+    padding:20px;
+    max-width: 630px;
+    margin:0 auto;
+}
+html,body,h1{
+    margin: 0;
+}
+.ded
+{   margin: 2px solid black;
+    display: flex;
+
+}
